@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box; /* Dodano da svi elementi poštuju margine i padding */
+}
+
+.pozadina {
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(241, 239, 239);
+    background: linear-gradient(0deg, rgb(250, 250, 250) 0%, rgb(221, 221, 221) 100%);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(O2projekt/10.jpg);
+}
+
+.duzina{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+.duzina .logo-slika{
+    width: 700px;
+}
+
+.tekst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tekst p{
+    font-size: 30px;
+    font-weight: 350;
+}
+
+.tekst button{
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    border-style: none;
+    background-color: rgb(139, 1, 139);
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+button:hover{
+    opacity: 0.70;
+}
+
+button:active{
+    opacity: 0.50;
+}
+
+.pozadina2{
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(139, 0, 204);
+    background: linear-gradient(0deg, rgb(158, 0, 197) 0%, rgb(129, 0, 161) 100%);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: url(O2projekt/purplepozadina.jpg);
+}
+
+.pozadina2{
+    font-size: 50px;
+    color: rgb(224, 224, 224);
+}
+
+.pozadina2 p{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 300;
+    color: rgb(224, 224, 224);
+}
+
+.pozadina3{
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(241, 239, 239);
+    background: linear-gradient(0deg, rgb(250, 250, 250) 0%, rgb(221, 221, 221) 100%);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    text-align: center;
+    background-image: url(O2projekt/10.jpg);
+}
+
+.pozadina3 h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.poslovnice {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolone koje su ravnomjerno raspoređene */
+    gap: 40px; /* Razmak između redova i kolona */
+    padding: 0 10%; /* Udaljenost od ivica ekrana */
+}
+
+.poslovnice h1{
+    font-size: 25px;
+}
+
+.poslovnice p{
+    font-size: 20px;
+}
+
+.template {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centriramo slike i tekst */
+    text-align: center;
+}
+
+.slika img {
+    width: 100%; /* Slike zauzimaju cijeli dostupni prostor unutar roditeljskog elementa */
+    max-width: 250px; /* Postavljamo maksimalnu širinu kako bi slike bile iste veličine */
+    height: auto; /* Održavamo omjer slike */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.template img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+/*prijedlog od chatgpt */
+
+.pozadina3{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0; /* Padding za dodatni prostor iznad i ispod */
+    text-align: center;
+}
+
+.pozadina3 h1{
+    font-size: 70px;
+    margin-bottom: 30px;
+    color: #272727; /* Tamnija nijansa za naslov */
+}
+
+.poslovnice {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolone u dva reda */
+    gap: 30px; /* Razmak između poslovnica */
+    padding: 0 10%; /* Malo veći padding za centralizaciju */
+}
+
+.template {
+    background: transparent; /* Ostavili smo originalnu pozadinu */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacija pri hoveru */
+}
+
+.template:hover {
+    transform: translateY(-10px); /* Podignemo poslovnicu kad se pređe mišem */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px; /* Povećamo sjenu na hover */
+}
+
+.template img {
+    width: 100%;
+    max-width: 400px; /* Slika zauzima cijelu širinu */
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+}
+
+.template img:hover {
+    opacity: 0.9; /* Blaga promjena opaciteta slike na hover */
+}
+
+.template h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #272727;
+}
+
+.template p {
+    font-size: 18px;
+    color: rgb(100, 100, 100); /* Nešto svjetlija boja za tekst opisa */
+}
+
+.poslovnice-naslov{
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 20px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+
+
+.pozadina4{
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(139, 0, 204);
+    background: linear-gradient(0deg, rgb(158, 0, 197) 0%, rgb(129, 0, 161) 100%);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    background-image: url(O2projekt/purplepozadina.jpg);
+    color: rgb(224, 224, 224);
+}
+
+.media-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    padding-left: 50px;
+ 
+}
+
+.media-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 550px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(224, 224, 224);
+    border-bottom-width: 2px;
+}
+
+
+
+.link {
+    text-decoration: none;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(224, 224, 224);
+    font-size: 100px;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.media-buttons p{
+    font-size: 20px;
+    color: rgb(224, 224, 224);
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.media-item-1{
+    border-top-style: solid;
+    border-top-color: rgb(224, 224, 224);
+    border-top-width: 2px;
+}
+
+.media-item-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 550px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(224, 224, 224);
+    border-bottom-width: 2px;
+}
+
+.tekst-radnovr{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    padding-left: 580px;
+}
+
+.tekst-desno h1{
+    font-size: 60px;
+    color: rgb(224, 224, 224);
+    
+}
+
+.tekst-desno p{
+    font-size: 40px;
+    color: rgb(224, 224, 224);
+    font-weight: 300;
+}
+
